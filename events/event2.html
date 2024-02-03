@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="scripts.js"></script>
+    <header>
+        <h1>Event2</h1>
+    </header>
+    <main>
+        <img src="C:\Users\Edson\Desktop\event\img\img4.jpg" alt="Event1" style="width: 300px; height: auto;"">
+        <h2>Date: 12/31/2021</h2>
+        <h2>Location: Dar es salaam</h2>
+        <p>Event Title: "Harmony Festival: Celebrating Unity in Diversity"</p>
+
+           <p> Description:</p>
+           <p> Join us for an unforgettable experience at the Harmony Festival, a celebration of unity in diversity! This vibrant and inclusive event aims to bring together people from all walks of life to celebrate the beauty of our differences and the strength of our shared humanity.</p>p
+            
+           <p>Date: [Insert Date]</p>
+           <p>Time: [Insert Time]</p>
+           <p>Location: [Insert Venue]</p>
+    </main>
+    <button type="submit" class="btn" onclick="openPopup()" >Register</button>
+    <div class="popup" id="popup">
+        <form action="#" method="post">
+            <h2>Submit Registration request</h2>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="address">Address:</label><br>
+            <input for="address" id="address" name="address"><br>
+            <label for="name">Contact:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <button type="button" onclick="closePopup()">Save</button>
+        </form>
+    </div>
+<script>
+let popup = document.getElementById("popup");
+
+function openPopup() {
+   popup.classList.add("open-popup"); 
+}
+function closePopup() {
+    popup.classList.remove("open-popup"); 
+ }
+</script>
+</body>
+</html>
